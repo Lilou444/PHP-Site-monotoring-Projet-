@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme form 'bootstrap_4_layout.html.twig' %} 
+
+{% block body %}
+<br />
+<h1> Ajout d'un site !<h1/>
+<br />
+{{ form_start(ajout) }}
+
+{{ form_row(form.username, {'attr': {'placeholder': "identifiant"}}) }}
+
+{{ form_row(form.password, {'attr': {'placeholder': "mot de passe"}}) }}
+
+
+{{ form_end(ajout) }}
+
+
+{% endblock %}

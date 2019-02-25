@@ -1,0 +1,13 @@
+{% extends 'base.html.twig'%}
+
+{% block body %}
+<h1> Bienvenue sur mon site de monitoring </h1>
+
+<h2> Voici la liste des sites </h2>
+
+<section class="Sites">
+   {% for lien in sites %}
+      <h1>{{ lien.liens}} </h1>
+   {% endfor %}
+</Sites>
+{% endblock %}
